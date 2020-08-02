@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Suite1" verbose="1" >
+    <test name="UiTestSuccess">
+        <classes>
+            <class name="tests.uiTests.TestRailTests">
+                <methods>
+                    <include name="login" />
+                    <include name="createProject" />
+                    <include name="deleteProject" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="UiTestUnsuccessful">
+        <classes>
+            <class name="tests.uiTests.TestRailTests">
+                <methods>
+                    <include name="login" />
+                    <include name="createProjectUnsuccessful" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="ApiTests">
+        <classes>
+            <class name="tests.apiTests.APITestsTestRail">
+            </class>
+        </classes>
+    </test>
+</suite>
