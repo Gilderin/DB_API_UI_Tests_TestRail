@@ -1,11 +1,11 @@
 package services;
 
+import baseEntity.BaseTestSQL;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
 
-public class JDBCService {
-    static Logger logger = Logger.getLogger(JDBCService.class);
+public class JDBCService extends BaseTestSQL {
     private static Connection connection = null;
     private static Statement statement = null;
 
